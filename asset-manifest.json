@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/Quick-Tap-Challenge/static/css/main.0fa68fa2.css",
-    "main.js": "/Quick-Tap-Challenge/static/js/main.b3800e8a.js",
+    "main.js": "/Quick-Tap-Challenge/static/js/main.40aac186.js",
     "static/js/453.51ad7087.chunk.js": "/Quick-Tap-Challenge/static/js/453.51ad7087.chunk.js",
+    "static/media/cheers.wav": "/Quick-Tap-Challenge/static/media/cheers.bcbb84745b3e25b50313.wav",
+    "static/media/background-music.mp3": "/Quick-Tap-Challenge/static/media/background-music.c145ce5696d54ffd5e05.mp3",
+    "static/media/tap.wav": "/Quick-Tap-Challenge/static/media/tap.03ee3acc87b2c1bf83e9.wav",
     "index.html": "/Quick-Tap-Challenge/index.html",
     "main.0fa68fa2.css.map": "/Quick-Tap-Challenge/static/css/main.0fa68fa2.css.map",
-    "main.b3800e8a.js.map": "/Quick-Tap-Challenge/static/js/main.b3800e8a.js.map",
+    "main.40aac186.js.map": "/Quick-Tap-Challenge/static/js/main.40aac186.js.map",
     "453.51ad7087.chunk.js.map": "/Quick-Tap-Challenge/static/js/453.51ad7087.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fa68fa2.css",
-    "static/js/main.b3800e8a.js"
+    "static/js/main.40aac186.js"
   ]
 }
