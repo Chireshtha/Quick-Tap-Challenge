@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Styles/Styles.css';
 
-
 function Header({ score, timeLeft }) {
   return (
     <header>

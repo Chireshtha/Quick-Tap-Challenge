@@ -3,18 +3,24 @@ import Header from './Components/Header';
 import GameArea from './Components/GameArea';
 import Footer from './Components/Footer';
 import './Styles/Styles.css';
+import cheersSound from './assets/cheers.wav';
+import bgSound from './assets/background-music.mp3';
 
 function App() {
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(30);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+  const [backgroundAudio] = useState(new Audio(bgSound));
+  const [cheersAudio] = useState(new Audio(cheersSound));
 
   const endGame = useCallback(() => {
     setIsPlaying(false);
     setIsPaused(false);
+    backgroundAudio.pause();
+    cheersAudio.play();
     alert(`Game Over! Your score is ${score}`);
-  }, [score]);
+  }, [score, backgroundAudio, cheersAudio]);
 
   useEffect(() => {
     let timer;
@@ -32,20 +38,23 @@ function App() {
     setTimeLeft(30);
     setIsPlaying(true);
     setIsPaused(false);
+    backgroundAudio.play();
+    backgroundAudio.loop = true;
   };
 
   const pauseGame = () => {
     setIsPaused((prev) => !prev);
-  };
-
-  const incrementScore = () => {
-    setScore((prev) => prev + 1);
+    if (isPaused) {
+      backgroundAudio.play();
+    } else {
+      backgroundAudio.pause();
+    }
   };
 
   return (
     <div className="game-container">
       <Header score={score} timeLeft={timeLeft} />
-      <GameArea isPlaying={isPlaying} incrementScore={incrementScore} />
+      <GameArea isPlaying={isPlaying} incrementScore={() => setScore(score + 1)} />
       <Footer 
         isPlaying={isPlaying} 
         isPaused={isPaused} 
