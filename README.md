@@ -37,7 +37,7 @@ The project is developed using the following technologies:
 - **Visual Studio Code**: The project is developed using Visual Studio Code, a powerful and versatile code editor.
 
 ## Deployment Link
-You can view the live game here: [Quick Tap Challenge](https://your-github-pages-link.com) *(https://chireshtha.github.io/Quick-Tap-Challenge/)*
+You can view the live game here: [Quick Tap Challenge]([Deployment Link](https://chireshtha.github.io/Quick-Tap-Challenge/))  
 
 To access the source code, visit the repository: [GitHub Repository](https://github.com/Chireshtha/quick-tap-challenge) *([Source Code](https://github.com/Chireshtha/Quick-Tap-Challenge.git))*
 
