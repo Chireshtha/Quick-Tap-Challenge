@@ -13,13 +13,14 @@ function App() {
   const [isPaused, setIsPaused] = useState(false);
   const [backgroundAudio] = useState(new Audio(bgSound));
   const [cheersAudio] = useState(new Audio(cheersSound));
+  const [endGameMessage, setEndGameMessage] = useState('');
 
   const endGame = useCallback(() => {
     setIsPlaying(false);
     setIsPaused(false);
     backgroundAudio.pause();
     cheersAudio.play();
-    alert(`Game Over! Your score is ${score}`);
+    setEndGameMessage(`Game Over! Your score is ${score}`);
   }, [score, backgroundAudio, cheersAudio]);
 
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
     setTimeLeft(30);
     setIsPlaying(true);
     setIsPaused(false);
+    setEndGameMessage('');
     backgroundAudio.play();
     backgroundAudio.loop = true;
   };
@@ -61,6 +63,11 @@ function App() {
         startGame={startGame} 
         pauseGame={pauseGame} 
       />
+      {endGameMessage && (
+        <div className="end-game-overlay">
+          <div className="end-game-message">{endGameMessage}</div>
+        </div>
+      )}
     </div>
   );
 }
