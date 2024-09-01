@@ -39,6 +39,6 @@ The project is developed using the following technologies:
 ## Deployment Link
 You can view the live game here: [Quick Tap Challenge](https://your-github-pages-link.com) *(https://chireshtha.github.io/Quick-Tap-Challenge/)*
 
-To access the source code, visit the repository: [GitHub Repository](https://github.com/Chireshtha/quick-tap-challenge) *(Replace with your actual repository URL)*
+To access the source code, visit the repository: [GitHub Repository](https://github.com/Chireshtha/quick-tap-challenge) *([Source Code](https://github.com/Chireshtha/Quick-Tap-Challenge.git))*
 
 
